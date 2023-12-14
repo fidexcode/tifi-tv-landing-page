@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*.btn{
+    background-color: #B7410E;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}*/
+
+.hero{
+    background-color: #FFFFFF;
+    background-image: url(../src/assets/conference2.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 65%;
+}
+button{
+    background-color: #B7410E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    border: 1px solid #6D6D6D;
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        background-size: 0%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .hero{
+        height: 600px;
+    }
+    .playSize{
+        max-width: 560px;
+    }
+    .stats{
+        margin-top: 70px;
+    }
+}
+@media  screen and (min-width:1440px) {
+    .hero{
+        height: 700px;
+    }
+    .playSize{
+        max-width: 640px;
+    }
+    .stats{
+        margin-top: 170px;
+    }
+}
+@media  screen and (min-width: 1700px) {
+    .hero{
+        height: 1400px;
+    }
+    .playSize{
+        max-width: 1200px;
+    }
+}
+@media screen and ( min-width: 1700px) {
+    button{
+        font-size: 36px;
+        padding: 20px 60px;
+    }
+    ::placeholder{
+        font-size: 30px;
+    }
+    input{
+        height: 80px;
+    }
+}
+
