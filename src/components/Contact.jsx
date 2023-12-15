@@ -1,4 +1,3 @@
-import { arrowDown } from "../assets"
 const Contact = () => (
     <section id="creatives" className="p-6 grid place-content-center">
       <div className="max-w-[650px] xl:max-w-[1200px]">
