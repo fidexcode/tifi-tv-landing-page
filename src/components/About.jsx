@@ -10,7 +10,7 @@ const About = () => (
         </div>
 
         <div className="p-6 ss:p-10 ss:mt-10 cursor-pointer sm:max-w-[400px] order-1 xl:max-w-[1500px]">
-          <img src={editorials} alt="editorial" className="w-[100%]"/>
+          <img src={editorials} alt="editorials" className="w-[100%]"/>
         </div>
       
     </section>
