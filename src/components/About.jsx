@@ -1,6 +1,6 @@
 import { editorials } from "../assets"
 const About = () => (
-    <section className="bg-lightPink relative  sm:h-[600px] xl:h-[1200px] sm:flex justify-center items-center">
+    <section id="about" className="bg-lightPink relative  sm:h-[600px] xl:h-[1200px] sm:flex justify-center items-center">
 
         <div className="p-6 sm:max-w-[500px] ss:max-w-[600px] order-2 xl:max-w-[1200px] ss:px-10 mt-10 sm:mt-10">
           <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-dimBrown">About us</h1>

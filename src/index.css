@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/*.btn{
-    background-color: #B7410E;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 5px;
-    font-size: 16px;
-}*/
 
 .hero{
     background-color: #FFFFFF;
@@ -17,12 +10,22 @@
     background-position: right top;
     background-size: 65%;
 }
+.elevate{
+    background-color: #B7410E;
+    color: #FFFFFF;
+    border-radius: 10px 50px 10px 5px;
+    line-height: 0px;
+    padding: 0;
+}
 button{
     background-color: #B7410E;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+button:hover{
+    background-color: brown;
 }
 
 input{
@@ -34,6 +37,15 @@ input{
     padding: 10px;
     margin: 10px 0;
 }
+.dropdown{
+    background-image: url(./assets/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 260px 10px;
+    cursor: pointer;
+}
+  *{
+    scroll-behavior: smooth;
+  }
 
 @media screen and (max-width:768px) {
     .hero{
@@ -42,6 +54,17 @@ input{
 }
 
 @media screen and (min-width:1024px) {
+    .hero{
+        height: 600px;
+    }
+    .playSize{
+        max-width: 480px;
+    }
+    .stats{
+        margin-top: 70px;
+    }
+}
+@media screen and (min-width:1025px) {
     .hero{
         height: 600px;
     }
@@ -81,6 +104,10 @@ input{
     }
     input{
         height: 80px;
+    }
+    .dropdown{
+        background-position: right;
+        background-size: 50px;
     }
 }
 

@@ -3,13 +3,13 @@ import { conference } from "../assets"
 import Stats from "./Stats"
 
 const Hero = () => (
-    <section className="">
+    <section id="home" className="">
 
         <div className="playSize grid">
           <div className="ss:max-w-[400px] xl:max-w-[1000px] p-5 ss:px-10 mt-10 sm:mt-10 xl:mt-[300px]">
 
             <div>
-              <h1 className="text-primary text-[24px] sm:text-[24px] xl:text-[60px] font-lato font-semibold"><span>Elevate</span> Your Brand <br /> with a Stunning Video</h1>
+              <h1 className="text-primary text-[24px] sm:text-[24px] xl:text-[60px] font-lato font-semibold"><span className="elevate">Elevate</span> Your Brand <br /> with a Stunning Video</h1>
             </div>
 
             <p className="font-normal text-primary sm:text-[16px] xl:text-[34px] my-6 xl:my-24">
@@ -18,7 +18,7 @@ const Hero = () => (
 
             <div className="mt-2 flex flex-nowrap">
               <button className="mr-5 my-5">Contact us</button>
-              <button className="bg-dimWhite border border-dimBrown text-dimBrown ml-5 my-5">View our portfolio</button>
+              <button className="bg-dimWhite border border-dimBrown text-dimBrown ml-5 my-5 hover:bg-[white] hover:border-[brown]">View our portfolio</button>
             </div>
         </div>
 

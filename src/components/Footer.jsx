@@ -26,21 +26,21 @@ const Footer = () => (
           <h2 className="font-semibold font-lato text-xl mb-4 text-primary xl:text-[50px] xl:mb-24">Subscribe to our News Letter</h2>
           <div className="flex h-[30px] xl:h-[60px] max-w-[250px] xl:max-w-[600px] items-center bg-dimBrown rounded-md">
             <input type="email" name="email" placeholder="Enter Your Email" className="h-[100%] w-[100%] border border-dimBrown"/>
-            <div className="bg-dimBrown h-[30px] xl:h-[60px] rounded-sm p-2 xl:p-6 cursor-pointer ">
+            <div className="bg-dimBrown hover:bg-[brown] h-[30px] xl:h-[60px] rounded-sm p-2 xl:p-6 cursor-pointer ">
               <img src={arrow} alt="arrow" className="w-[18.88px] xl:w-[32px] "/>
             </div>
           </div>
           <div className="flex gap-2 mt-4">
-            <div className="flex items-center justify-center bg-dimBrown h-[25px] w-[25px] xl:w-[60px] xl:h-[60px] rounded-md p-2 cursor-pointer">
+            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px] rounded-md p-2 cursor-pointer">
               <img src={facebook} alt="facebook" className="w-[8px] xl:w-[18px]" />
             </div>
-            <div className="flex items-center justify-center bg-dimBrown h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
+            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
               <img src={linkIdine} alt="linkIdin" className="xl:w-[25px]"/>
             </div>
-            <div className="flex items-center justify-center bg-dimBrown h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
+            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
               <img src={twitter} alt="twitter" className="xl:w-[25px]"/>
             </div>
-            <div className="flex items-center justify-center bg-dimBrown h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
+            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
               <img src={instagram} alt="instagram" className="xl:w-[25px]"/>
             </div>
           </div>

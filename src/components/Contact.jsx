@@ -1,6 +1,6 @@
 import { arrowDown } from "../assets"
 const Contact = () => (
-    <section className="p-6 grid place-content-center">
+    <section id="creatives" className="p-6 grid place-content-center">
       <div className="max-w-[650px] xl:max-w-[1200px]">
         <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Hire creatives</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-center text-primary xl:leading-[60px]">Creative Talents On Demand</h2>
@@ -13,9 +13,9 @@ const Contact = () => (
             <input type="text" placeholder="Enter your company's name"/>
             <input type="text" placeholder="Enter your company's Email"/>
             <input type="text" placeholder="Company's website(optional)"/>
-            <input type="text" placeholder="Select experience level"/>
-            <input type="text" placeholder="select role tittle"/>
-            <input type="text" placeholder="select role you're hiring for"/>
+            <input type="text" placeholder="Select experience level" className="dropdown"/>
+            <input type="text" placeholder="select role tittle" className="dropdown"/>
+            <input type="text" placeholder="select role you're hiring for" className="dropdown"/>
           </div>
           <textarea name="" id="" cols="" rows="5" placeholder="Add an additional note." className="border border-[#6D6D6D] rounded-[4px] p-[10px] outline-none w-full mt-[10px]"></textarea>
         </form>

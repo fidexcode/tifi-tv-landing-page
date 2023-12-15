@@ -1,7 +1,7 @@
 import {mobileImage, desktopImage} from "../assets"
 
-const Portfolio = () => (
-    <section className="p-6 bg-lightPink sm:px-10 grid place-items-center">
+const  Portfolio = () => (
+    <section id="portfolio" className="p-6 bg-lightPink sm:px-10 grid place-items-center">
       <div>
         <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Our Portfolio</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-primary text-center">Explore Our Creative Showcase</h2>

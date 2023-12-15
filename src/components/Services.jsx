@@ -1,7 +1,7 @@
 import { edit, video, audio, book, smile, record} from "../assets"
 
 const Services = () =>(
-    <section className="bg-dimWhite p-6 ss:px-10 grid place-items-center">
+    <section id="service" className="bg-dimWhite p-6 ss:px-10 grid place-items-center">
       <div className="mb-4">
         <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Our services</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-center text-primary">Discover Our Creative offerings</h2>
