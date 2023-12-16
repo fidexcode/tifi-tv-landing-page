@@ -1,4 +1,5 @@
-import {logo, arrow, facebook, instagram, linkIdine, twitter} from "../assets"
+import {logo, arrow} from "../assets"
+import { agency, information, socials } from "../constants"
 const Footer = () => (
     <section className="bg-lightPink p-6 ss:px-10 mt-10 xl:mt-32 xl:p-32">
       <div className="ss:flex justify-around items-start flex-wrap">
@@ -9,17 +10,23 @@ const Footer = () => (
         <div className="mb-6">
           <h2 className="font-semibold font-lato text-xl text-primary xl:text-[50px]">Agency</h2>
           <ul className="list-none">
-            <li className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">About us</a></li>
-            <li className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">Our services</a></li>
-            <li className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">Our portfolio</a></li>
+            {agency.map(agen=>(
+              <li key={agen.id} className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">
+                {agen.title}
+                </a></li>
+            ))}
           </ul>
         </div>
         <div className="mb-6">
           <h2 className="font-semibold font-lato text-xl  text-primary xl:text-[50px]">Information</h2>
-          <ul>
-            <li className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">Contact us</a></li>
-            <li className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">FAQS</a></li>
-            <li className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">Hire creatives</a></li>
+          <ul className="list-none">
+            {
+              information.map(info=>(
+                <li key={info.id} className="xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 "><a href="">
+                  {info.title}
+                  </a></li>
+              ))
+            }  
           </ul>
         </div>
         <div className="mb-6">
@@ -31,18 +38,11 @@ const Footer = () => (
             </div>
           </div>
           <div className="flex gap-2 mt-4">
-            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px] rounded-md p-2 cursor-pointer">
-              <img src={facebook} alt="facebook" className="w-[8px] xl:w-[18px]" />
+            { socials.map(social=>(
+              <div key={social.id} className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px] rounded-md p-2 cursor-pointer">
+              <img src={social.img} alt="facebook" className="w-[8px] xl:w-[18px]" />
             </div>
-            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
-              <img src={linkIdine} alt="linkIdin" className="xl:w-[25px]"/>
-            </div>
-            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
-              <img src={twitter} alt="twitter" className="xl:w-[25px]"/>
-            </div>
-            <div className="flex items-center justify-center bg-dimBrown hover:bg-[brown] h-[25px] w-[25px] xl:w-[60px] xl:h-[60px]  rounded-md p-2 cursor-pointer">
-              <img src={instagram} alt="instagram" className="xl:w-[25px]"/>
-            </div>
+            ))}
           </div>
         </div>
       </div>
