@@ -2,8 +2,6 @@ import { useInView } from "react-intersection-observer"
 import { editorials } from "../assets"
 const About = () => {
   const {ref, inView} = useInView({
-    threshold: 0.5,
-    delay: 1000
   })
   return ( 
     <section ref={ref} id="about" className=" bg-lightPink relative">
