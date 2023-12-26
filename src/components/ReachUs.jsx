@@ -1,9 +1,14 @@
+import { useInView } from "react-intersection-observer";
 import { editor } from "../assets"
-const ReachUs = () => (
-    <section className="bg-dimWhite p-6 grid place-items-center">
-      <div className="sm:flex flex-nowrap mt-10">
+const ReachUs = () => {
+  const {ref, inView} = useInView({
+
+  })
+  return ( 
+    <section ref={ref} className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} bg-dimWhite p-6 grid place-items-center`}>
+      <div className="sm:flex flex-nowrap mt-10 sm:h-[600px]">
         <div className="sm:max-w-[300px] ss:max-w-[400px] xl:min-w-[800px] ss:m-auto">
-          <img src={editor} alt="editor" className="w-full sm:relative z-10 left-[10px]" />
+          <img src={editor} alt="editor" className="w-full" />
         </div>
 
         <div className="bg-dimBrown p-2 sm:px-16 xl:min-w-[800px] sm:max-w-[400px] ss:max-w-[600px] ss:m-auto">
@@ -14,7 +19,7 @@ const ReachUs = () => (
         </div>
       </div>
     </section>
-  )
-
-
-export default ReachUs
+   );
+}
+ 
+export default ReachUs;

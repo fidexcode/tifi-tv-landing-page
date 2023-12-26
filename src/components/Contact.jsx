@@ -1,5 +1,10 @@
-const Contact = () => (
-    <section id="creatives" className="p-6 grid place-content-center">
+import { useInView } from "react-intersection-observer";
+const Contact = () => {
+  const {ref, inView} = useInView({
+    
+  })
+  return ( 
+    <section ref={ref} id="creatives" className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} p-6 grid place-content-center`}>
       <div className="max-w-[650px] xl:max-w-[1200px]">
         <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Hire creatives</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-center text-primary xl:leading-[60px]">Creative Talents On Demand</h2>
@@ -23,6 +28,7 @@ const Contact = () => (
         </div>
       </div>
     </section>
-  )
-
-export default Contact
+   );
+}
+ 
+export default Contact;

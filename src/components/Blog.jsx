@@ -1,6 +1,11 @@
+import { useInView } from "react-intersection-observer";
 import { blogs } from "../constants"
-const Blog = () => (
-    <section className="bg-lightPink p-6 px-10">
+const Blog = () => {
+  const {ref, inView} = useInView({
+
+  })
+  return ( 
+    <section ref={ref} className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} bg-lightPink p-6 px-10`}>
       <div>
         <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-dimBrown text-center">Blog post</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-primary text-center my-6">Discover Our Blog for Expert Insights</h2>
@@ -22,6 +27,7 @@ const Blog = () => (
       <button className="mt-10">See more</button>
       </div>
     </section>
-  )
-
-export default Blog
+   );
+}
+ 
+export default Blog;

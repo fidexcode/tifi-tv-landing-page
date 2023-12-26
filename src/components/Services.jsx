@@ -1,7 +1,12 @@
-import { myServices } from "../constants"
-
-const Services = () =>(
-    <section id="service" className="bg-dimWhite p-6 ss:px-10 grid place-items-center">
+import { myServices } from "../constants";
+import { useInView } from "react-intersection-observer";
+const Services = () => {
+  const {ref, inView} = useInView({
+    threshold: 0,
+    delay: 1000
+  })
+  return ( 
+    <section ref={ref} id="service" className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} bg-dimWhite p-6 ss:px-10 grid place-items-center`}>
       <div className="mb-4">
         <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Our services</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-center text-primary">Discover Our Creative offerings</h2>
@@ -23,6 +28,7 @@ const Services = () =>(
 
       <button className="mt-10">View More</button>
     </section>
-  )
-
-export default Services
+   );
+}
+ 
+export default Services;

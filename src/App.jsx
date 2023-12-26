@@ -1,6 +1,8 @@
 import {Navbar, Hero, About, Services, Portfolio, Contact, Blog, ReachUs, Footer} from "./components"
 
-const App = () => (
+const App = () => {
+ 
+  return ( 
     <div className="">
       <div className="hero">
         <div className="sm:px-[30px] sm:py-[20px]">
@@ -23,6 +25,7 @@ const App = () => (
         </div>
       </div>
     </div>
-  )
-
-export default App
+   );
+}
+ 
+export default App;
