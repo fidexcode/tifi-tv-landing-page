@@ -8,9 +8,9 @@ const Portfolio = () => {
   return ( 
     <section ref={ref} id="portfolio" className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} p-6 bg-lightPink sm:px-10 grid place-items-center`}>
     <div>
-      <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Our Portfolio</h1>
-      <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-primary text-center">Explore Our Creative Showcase</h2>
-      <p className="sm:text-[16px] xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 text-center">Journey Through Our Visual Masterpieces: A Showcase of Creativity, Innovation, and Excellence</p>
+      <h1 className="font-bold font-lato text-xl  text-center text-dimBrown">Our Portfolio</h1>
+      <h2 className="font-bold font-lato text-2xl sm:text-[24px]  text-primary text-center">Explore Our Creative Showcase</h2>
+      <p className="sm:text-[16px]  text-primary font-lato font-normal mt-4 my-6 text-center">Journey Through Our Visual Masterpieces: A Showcase of Creativity, Innovation, and Excellence</p>
     </div>
 
     <div className="">

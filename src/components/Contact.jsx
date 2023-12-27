@@ -6,9 +6,9 @@ const Contact = () => {
   return ( 
     <section ref={ref} id="creatives" className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} p-6 grid place-content-center`}>
       <div className="max-w-[650px] xl:max-w-[1200px]">
-        <h1 className="font-bold font-lato text-xl xl:text-[40px] xl:mb-20 text-center text-dimBrown">Hire creatives</h1>
-        <h2 className="font-bold font-lato text-2xl sm:text-[24px] xl:text-[50px] text-center text-primary xl:leading-[60px]">Creative Talents On Demand</h2>
-        <p className="sm:text-[16px] xl:text-[34px] text-primary font-lato font-normal mt-4 my-6 xl:my-24 text-center">Discover our World of Creative Talent at Your Fingertips, Choose our Perfect Experts to Elevate Your Projects, and Watch Your Ideas Flourish into Stunning Visual Realities</p>
+        <h1 className="font-bold font-lato  text-center text-dimBrown">Hire creatives</h1>
+        <h2 className="font-bold font-lato text-2xl sm:text-[24px] text-center text-primary ">Creative Talents On Demand</h2>
+        <p className="sm:text-[16px] text-primary font-lato font-normal mt-4 my-6 text-center">Discover our World of Creative Talent at Your Fingertips, Choose our Perfect Experts to Elevate Your Projects, and Watch Your Ideas Flourish into Stunning Visual Realities</p>
       </div>
 
       <div className="">

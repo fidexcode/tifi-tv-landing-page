@@ -7,12 +7,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className=" hidden sm:flex items-center justify-between p-[20px] xl:p-[40px] rounded-[10px] bg-lightGray">
+      <nav className=" hidden sm:flex items-center justify-between p-[20px] x:p-l[40px] rounded-[10px] bg-lightGray">
       <img src={logo} alt="logo" className="lg:w-[120px] lg:h-[40px] cursor-pointer"/>
       <ul className="sm:flex hidden gap-10">
         {navLinks.map(nav=>(
           <li key={nav.id}>
-            <a href={`#${nav.id}`} className="text-primary text-[14px] md:text-[18px] xl:text-[36px] font-normal font-lato">{nav.title}</a>
+            <a href={`#${nav.id}`} className="text-primary text-[14px] md:text-[18px] font-normal font-lato">{nav.title}</a>
           </li>
         ))}
       </ul>
