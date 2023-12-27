@@ -1,12 +1,7 @@
 import {mobileImage, desktopImage} from "../assets"
-import { useInView } from "react-intersection-observer"
-
 const Portfolio = () => {
-  const {ref, inView} = useInView({
-
-  })
   return ( 
-    <section ref={ref} id="portfolio" className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} p-6 bg-lightPink sm:px-10 grid place-items-center`}>
+    <section id="portfolio" className="p-6 bg-lightPink sm:px-10 grid place-items-center">
     <div>
       <h1 className="font-bold font-lato text-xl  text-center text-dimBrown">Our Portfolio</h1>
       <h2 className="font-bold font-lato text-2xl sm:text-[24px]  text-primary text-center">Explore Our Creative Showcase</h2>
@@ -17,7 +12,7 @@ const Portfolio = () => {
       <div className="flex sm:hidden">
         <img src={mobileImage} alt="mobileImage" className="w-full" />
       </div>
-      <div className="hidden sm:flex">
+      <div className="hidden sm:flex max-w-[1200px]">
         <img src={desktopImage} alt="desktopImage" className="w-full" />
       </div>
     </div>

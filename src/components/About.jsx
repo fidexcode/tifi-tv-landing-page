@@ -1,11 +1,8 @@
-import { useInView } from "react-intersection-observer"
 import { editorials } from "../assets"
 const About = () => {
-  const {ref, inView} = useInView({
-  })
   return ( 
-    <section ref={ref} id="about" className=" bg-lightPink relative">
-      <div className={` ${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} sm:h-[600px] sm:flex justify-center items-center`}>
+    <section id="about" className=" bg-lightPink relative">
+      <div className="sm:h-[600px] sm:flex justify-center items-center">
       <div className="p-6 sm:max-w-[500px] ss:max-w-[600px] order-2 ss:px-10 mt-10 sm:mt-10">
           <h1 className="font-bold font-lato text-xl text-dimBrown">About us</h1>
           <h2 className="font-bold font-lato text-2xl sm:text-[24px] text-primary">Discover Our Creative Journey</h2>

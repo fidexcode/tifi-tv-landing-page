@@ -1,15 +1,11 @@
 import Button from "./Button"
 import { conference } from "../assets"
 import Stats from "./Stats"
-import { useInView } from "react-intersection-observer"
 const Hero = () => {
-  const {ref, inView} = useInView({
-    
-  })
   return ( 
     <section id="home" className="">
 
-    <div ref={ref} className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} playSize grid`}>
+    <div className="playSize grid">
       <div className="ss:max-w-[400px] p-5 ss:px-10 mt-10 sm:mt-10 ">
 
         <div>

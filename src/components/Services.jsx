@@ -1,26 +1,21 @@
 import { myServices } from "../constants";
-import { useInView } from "react-intersection-observer";
 const Services = () => {
-  const {ref, inView} = useInView({
-    threshold: 0,
-    delay: 1000
-  })
   return ( 
-    <section ref={ref} id="service" className={`${inView ? " translate-y-[0] opacity-100 duration-1000 " : "translate-y-[100px] opacity-0"} bg-dimWhite p-6 ss:px-10 grid place-items-center`}>
+    <section id="service" className="bg-dimWhite p-6 ss:px-10 grid place-items-center">
       <div className="mb-4">
-        <h1 className="font-bold font-lato text-xl xl:mb-20 text-center text-dimBrown">Our services</h1>
+        <h1 className="font-bold font-lato text-xl text-center text-dimBrown">Our services</h1>
         <h2 className="font-bold font-lato text-2xl sm:text-[24px] text-center text-primary">Discover Our Creative offerings</h2>
       </div>
-
+      
       <div className="grid ss:grid-cols-2 sm:grid-cols-3 gap-10" >
         {myServices.map(serve=>(
-          <div key={serve.id} className={`${serve.color ? "bg-dimBrown":"bg-dimWhite"} border border-faintPink flex flex-col justify-center items-center text-center p-6 rounded-[10px]`}>
+          <div key={serve.id} className={`${serve.color ? "bg-dimBrown":"bg-dimWhite"} border border-faintPink flex flex-col justify-center items-center text-center p-6 rounded-[10px] max-w-[400px]`}>
 
           <div className={`${serve.color ? "bg-dimWhite":"bg-dimBrown"} flex items-center justify-center h-[40px] w-[40px] rounded-[100%] p-[4px]`}>
             <img src={serve.img} alt="edit" className=" w-[15px] sm:h-[15px]"/>
           </div>
           <h2 className={`${serve.color ? "text-dimWhite" : "text-dimBrown"} font-bold font-lato mt-4 text-2xl sm:text-[24px]`}>{serve.title}</h2>
-          <p className={`${serve.color ? "text-white":"text-primary"} sm:text-[16px] xl:text-[34px] font-lato font-normal mt-4`}>{serve.content}</p>
+          <p className={`${serve.color ? "text-white":"text-primary"} sm:text-[16px] font-lato font-normal mt-4`}>{serve.content}</p>
 
         </div>
         ))}

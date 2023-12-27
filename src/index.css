@@ -91,9 +91,9 @@ input{
     }
 }
 @media  screen and (min-width: 1700px) {
-    .hero{
+    /*.hero{
         height: 1400px;
-    }
+    }*/
     .playSize{
         max-width: 1200px;
     }
