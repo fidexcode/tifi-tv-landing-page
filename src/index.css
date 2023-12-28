@@ -5,7 +5,7 @@
 
 .hero{
     background-color: #FFFFFF;
-    background-image: url(../src/assets/conference2.png);
+    background-image: url(../src/assets/conference2.jpg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 65%;
@@ -62,7 +62,7 @@ input{
         height: 600px;
     }
     .playSize{
-        max-width: 480px;
+        width: 480px;
     }
     .stats{
         margin-top: 70px;
@@ -73,7 +73,7 @@ input{
         height: 600px;
     }
     .playSize{
-        max-width: 560px;
+        width: 560px;
     }
     .stats{
         margin-top: 70px;
@@ -84,7 +84,7 @@ input{
         height: 700px;
     }
     .playSize{
-        max-width: 640px;
+        width: 640px;
     }
     .stats{
         margin-top: 170px;
@@ -93,9 +93,9 @@ input{
 @media  screen and (min-width: 1700px) {
     /*.hero{
         height: 1400px;
-    }*/
+    }
     .playSize{
         max-width: 1200px;
-    }
+    }*/
 }
 

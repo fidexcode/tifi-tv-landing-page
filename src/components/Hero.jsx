@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
     </div>
 
-      <div className="sm:flex hidden absolute  justify-self-end self-center ">
+      <div className="sm:flex hidden absolute justify-self-end self-center">
         <Button  />
       </div>
     </div>
